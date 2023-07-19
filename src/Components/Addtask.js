@@ -7,7 +7,7 @@ function Addtask(props) {
         if(task.trim() === ''){
             return 
         } else {
-            axios.post('http://localhost:8000/api/tasks' , {
+            axios.post('https://todo-list-backend-rdz1.onrender.com/api/tasks' , {
                 todo : task,
                 isComplete : false
             }).then(res => {
