@@ -14,7 +14,7 @@ function Todolist(props) {
             }).then(res => props.taskComplete(res.data)).catch(err => console.log(err))
         }
         const removeTask = id => {
-            axios.delete(`http://localhost:8000/api/tasks/${id}`).then(res => props.removeTask(res.data)).catch(err => console.log(err))
+            axios.delete(`https://todo-list-backend-rdz1.onrender.com/api/tasks/${id}`).then(res => props.removeTask(res.data)).catch(err => console.log(err))
         } 
         return <li key = {index}>
             <div style = {{display : 'flex'}}>
